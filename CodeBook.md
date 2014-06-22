@@ -10,7 +10,7 @@ The original HAR ("Human Activity Recognition") dataset is found here:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-### Original dataset overview:
+### Original dataset overview (from README.txt file in the original dataset):
 
 The following is the original dataset description from **README.txt** and **features_info.txt** files attached to the original dataset found in the link above:
 
@@ -30,7 +30,7 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-### Original dataset feature Selection (from features_info.txt file):
+### Original dataset feature Selection (from features_info.txt file in the original dataset):
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
 were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
