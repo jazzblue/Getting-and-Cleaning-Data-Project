@@ -25,8 +25,8 @@ The repository contains R script run_analysis.R that performs the mentioned abov
 ## How to run
 
 ### R commands:
-source("run_analysis.R)
-run_analysis(dataDir)
+    source("run_analysis.R)
+    run_analysis(dataDir)
     
 ### Arguments:
 dataDir: directory path of the extracted HAR dataset
