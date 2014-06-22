@@ -45,12 +45,19 @@ createFeatureTable <- function(dataDir) {
 	# Filtering "mean()" and "std()" feature names
 	filteredFeat <- features[grepl("mean\\(\\)|std\\(\\)", features[,2]),]
 
+	# Removing "-" and converting letter "t" after "Time"	
+	filteredFeat[,2] <- gsub("^t", "Time", filteredFeat[,2], perl=TRUE)
+
+	# Removing "-" and converting letter "f" after "Freq"	
+	filteredFeat[,2] <- gsub("^f", "Freq", filteredFeat[,2], perl=TRUE)
+
 	# Removing "-" and converting first letter after "-" to upper case	
 	filteredFeat[,2] <- gsub("-(\\w)", "\\U\\1", filteredFeat[,2], perl=TRUE)
+
 	filteredFeat[,2] <- gsub("\\(\\)", "", filteredFeat[,2], perl=TRUE)  # Remove parenthesis
 
-	# Convert first letter ("t" or "f") to upper case and add prefix "Mean"
-	filteredFeat[,2] <- gsub("^(\\w)", "mean\\U\\1", filteredFeat[,2], perl=TRUE) 
+	# Add prefix "Mean"
+	filteredFeat[,2] <- gsub("^", "mean", filteredFeat[,2], perl=TRUE) 
 
 	# Prepend two new columns: "subject" and "activity"
 	filteredFeat[, 1] <- filteredFeat[, 1] + 2  # Add 2 to column number since we are prepending 2 new columns
