@@ -1,16 +1,17 @@
 ## Description 
 
-This project is an R script that performs processing on the data collected
-from the accelerometers from the Samsung Galaxy S smartphone. 
+The purpose of this project is performing processing on the "Human Activity Recognition Using Smartphones" Data Set 
+as well as providing means to perform such processing in a form of an R script.
+
 The data description website is found in:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-and the dataset:
+and the HAR dataset:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The processing performs the following tasks (this list of tasks was provided by 
+The data processing performs the following tasks (this list of tasks was provided by 
 "Getting and Cleaning the Data" Coursera class instructors):
 
 1. Merges the training and the test sets to create one data set.
@@ -23,11 +24,12 @@ The repository contains R script run_analysis.R that performs the mentioned abov
 
 ## How to run
 
-### Command:
+### R commands:
+source("run_analysis.R)
 run_analysis(dataDir)
     
 ### Arguments:
-dataDir: directory path of the extracted HAR data
+dataDir: directory path of the extracted HAR dataset
 
 ### Output file:
 tidyMeanData.txt
