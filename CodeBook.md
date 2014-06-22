@@ -12,8 +12,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### Original dataset overview (from README.txt file in the original dataset):
 
-The following is the original dataset description from **README.txt** and **features_info.txt** files attached to the original dataset found in the link above:
-
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity measurements were captured at a constant rate of 50Hz. 
 The experiments have been video-recorded to label the data manually.
