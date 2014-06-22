@@ -43,7 +43,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-- - tBodyAcc-XYZ
+- tBodyAcc-XYZ
 - tGravityAcc-XYZ
 - tBodyAccJerk-XYZ
 - tBodyGyro-XYZ
@@ -88,7 +88,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 - tBodyAccJerkMean
 - tBodyGyroMean
 - tBodyGyroJerkMean
-- 
+
 ### Data processing and cleaning:
 
 The data processing performed in the scope of this project is only interested in mean and standard deviation measurements from the 
