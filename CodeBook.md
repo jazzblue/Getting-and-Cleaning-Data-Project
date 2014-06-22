@@ -103,7 +103,7 @@ The resulted tidy dataset *tidyMeanData.txt* contains the following variables:
 - variables representing mean value of each **mean** and **standard deviation** original measurement variable for each subject and each activity.
 The name of each such variable is constructed as follows:
 
-- The name of original variable is furinished prefix **Mean** do denote mean value.
-- The original prefix **t** or **f** **Time** or **Frequency** domain measurement respectively is converted to upper-case. In the new variable name this 
+  - The name of original variable is furinished prefix **Mean** do denote mean value.
+  - The original prefix **t** or **f** **Time** or **Frequency** domain measurement respectively is converted to upper-case. In the new variable name this 
 indicator will follow the prefix **Mean** described above.
-- The rest of the of the original variable name whereas suffixes **-mean()** and **-std()** are converted to **Mean** and **Std** respectively.
+  - The rest of the of the original variable name whereas suffixes **-mean()** and **-std()** are converted to **Mean** and **Std** respectively.
