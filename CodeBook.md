@@ -106,4 +106,4 @@ The name of each such variable is constructed as follows:
   - The name of original variable is furinished prefix **Mean** do denote mean value.
   - The original prefix **t** or **f** denoting *Time* or *Frequency* domain measurement respectively is converted to upper-case. In the new variable name this 
 indicator will follow the prefix **Mean** described above.
-  - The rest of the of the original variable is preserved except suffixes **-mean()** and **-std()** which are converted to **Mean** and **Std** respectively.
+  - The rest of the of the original variable is preserved except indicators **-mean()** and **-std()** which are converted to **Mean** and **Std** respectively.
