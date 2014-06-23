@@ -7,15 +7,12 @@
 # 5. Creates an independent tidy data set with the average of each variable for each 
 # activity and each subject.
 #
-# Invoking the script:
-#	run_analysis(dataDir)
-#	Arguments:
-#		dataDir: directory of the extracted HAR data
-
+# Usage: the script should be placed in the same directory as data before sourcing it as
+# source("run_analysis.R")
 
 run_analysis <- function(dataDir) {
 	# This the main function that performs the tasks described above.
-	# The function wrutes the tidy data into file tidyMeanData.txt.
+	# The function writes the tidy data into file tidyMeanData.txt.
 	# Arguments:
 	# 	dataDir: directory of the extracted HAR data
 	# Output file:
@@ -78,7 +75,7 @@ createSubset <- function(dataDir, featureTable) {
 
 	# Read train and test measurements and combine with subject activity data
 	for (dataType in c("train", "test")) {
-		dir <- paste("UCI HAR Dataset", dataType, sep = "\\")
+		dir <- paste(dataDir, dataType, sep = "\\")
 		file_suffix <- paste(dataType, "txt", sep=".")
 
 		# Reaf measurement data
@@ -110,4 +107,7 @@ createSubset <- function(dataDir, featureTable) {
 
 	return(harSubset)
 }
+
+# Invoking the main function in the current directory where the data is 
+run_analysis(".")
 
