@@ -7,7 +7,7 @@
 # 5. Creates an independent tidy data set with the average of each variable for each 
 # activity and each subject.
 #
-# Usage: the script should be placed in the same directory as data before sourcing it as
+# Usage: the script should be placed in the same directory as data an soud then sourcing it as
 # source("run_analysis.R")
 
 run_analysis <- function(dataDir) {
